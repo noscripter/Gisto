@@ -13,7 +13,9 @@
     "yargs": "^3.0.4"
   },
   "scripts": {
-    "start": "./node_modules/.bin/nw app"
+    "start": "./node_modules/.bin/nw app",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -61,6 +63,8 @@
     "normalize.css": "^3.0.3",
     "selectize": "^0.12.1",
     "socket.io-client": "^1.3.5",
-    "ui-select": "angular-ui/ui-select"
-  }
+    "ui-select": "angular-ui/ui-select",
+    "snyk": "^1.88.0"
+  },
+  "snyk": true
 }
